@@ -1,5 +1,4 @@
-/* Porto Ajuda — Estilos */
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Nunito:wght@400;600;700&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,16 +12,16 @@ body {
 }
 
 
-/* SEÇÃO PRINCIPAL */
+
 
 .sobre {
   position: relative;
-  padding: 70px 24px 80px;
+  padding: 70px 5% 80px;
   overflow: hidden;
   background: linear-gradient(180deg, #1a1060 0%, #0e0d30 40%, #0b0c2a 100%);
 }
 
-/* Estrelas com CSS puro usando box-shadow */
+
 .sobre::before {
   content: '';
   position: absolute;
@@ -57,8 +56,6 @@ body {
 }
 
 
-/* TÍTULO */
-
 .sobre-label {
   display: flex;
   align-items: center;
@@ -82,8 +79,8 @@ body {
 }
 
 .sobre-titulo {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.8rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4.5rem;
   color: #f5c842;
   text-align: center;
   margin-bottom: 60px;
@@ -91,7 +88,7 @@ body {
 }
 
 
-/* RÓTULO DE SEÇÃO */
+
 
 .section-label {
   display: inline-block;
@@ -106,10 +103,9 @@ body {
 }
 
 
-/* CARD DE MISSÃO */
 
 .missao-wrap {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto 56px;
 }
 
@@ -120,7 +116,7 @@ body {
   background-color: #13153a;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  padding: 32px 28px;
+  padding: 36px 40px;
 }
 
 .missao-icon {
@@ -162,17 +158,16 @@ body {
 }
 
 
-/* PILARES */
 
 .como-wrap {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto 60px;
 }
 
 .pilares {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 16px;
   margin-top: 4px;
 }
 
@@ -180,7 +175,7 @@ body {
   background-color: #13153a;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  padding: 26px 16px 22px;
+  padding: 28px 18px 24px;
   text-align: center;
 }
 
@@ -206,71 +201,127 @@ body {
 }
 
 .pilar h3 {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #e8eaf6;
   margin-bottom: 8px;
 }
 
 .pilar p {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   color: #9ea8d8;
   line-height: 1.6;
 }
 
 
-/* CITAÇÃO */
+
 
 .citacao {
-  max-width: 560px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  position: relative;
+  background-color: #13153a;
+  border: 1px solid rgba(245, 200, 66, 0.2);
+  border-radius: 12px;
+  padding: 16px 48px 28px;
 }
 
 .aspas-abre {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 6rem;
   color: #f5c842;
-  line-height: 0.6;
+  line-height: 0.8;
   display: block;
   opacity: 0.6;
   text-align: left;
 }
 
 .aspas-fecha {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 6rem;
   color: #f5c842;
-  line-height: 0.4;
+  line-height: 0.2;
   display: block;
   opacity: 0.6;
   text-align: right;
-  margin-top: 6px;
+  margin-top: 12px;
 }
 
 .citacao blockquote {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-style: italic;
   color: #e8eaf6;
   line-height: 1.85;
+  padding-bottom: 5%;
+}
+
+@media (max-width: 1024px) {
+  .sobre {
+    padding: 60px 4% 70px;
+  }
+
+  .sobre-titulo {
+    font-size: 3.8rem;
+  }
+
+  .missao-card {
+    padding: 28px 24px;
+  }
 }
 
 
-/* RESPONSIVO */
+@media (max-width: 768px) {
+  .sobre {
+    padding: 50px 5% 60px;
+  }
 
-@media (max-width: 640px) {
   .sobre-titulo {
-    font-size: 2.6rem;
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+
+  .pilares {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .citacao {
+    padding: 16px 28px 24px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .sobre {
+    padding: 40px 5% 50px;
+  }
+
+  .sobre-titulo {
+    font-size: 2.4rem;
+    margin-bottom: 32px;
   }
 
   .missao-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 24px 20px;
+    gap: 20px;
   }
 
   .pilares {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .citacao {
+    padding: 14px 20px 20px;
+  }
+
+  .citacao blockquote {
+    font-size: 0.95rem;
+  }
+
+  .aspas-abre,
+  .aspas-fecha {
+    font-size: 4rem;
   }
 }
