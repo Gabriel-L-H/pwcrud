@@ -26,7 +26,7 @@ const cabecalho =
     </nav>
 
     <div class="profile-icon">
-      <i class="fa-regular fa-user"></i>
+      <a href="login.html"><i class="fa-regular fa-user"></i></a>
     </div>
   `
 
