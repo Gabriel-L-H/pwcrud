@@ -17,9 +17,9 @@ const cabecalho =
 
         <li><a href="#">Ajude Nosso Site</a></li>
         <li><a href="#">OSC's Próximas</a></li>
-        <li><a href="#">Sobre</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
         <li><a href="#">Ajuda</a></li>
-        <li><a href="Porto Ajuda.html">Home</a></li>
+        <li><a href="Porto-Ajuda.html">Home</a></li>
 
       </ul>
 
