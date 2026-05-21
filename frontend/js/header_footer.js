@@ -1,15 +1,17 @@
 const header = document.querySelector(".navbar");
 const cabecalho =
- `        
-    <div class="logo">
+  `        
+    <a href="Porto Ajuda.html">
+      <div class="logo">
 
-      <div class="logo-circle">
-        <img class="logo-circle-img" src="../imgs/logo-night.png">
+       <div class="logo-circle">
+         <img class="logo-circle-img" src="../imgs/logo-night.png">
+       </div>
+
+        <span>Porto Ajuda</span>
+
       </div>
-
-      <span>Porto Ajuda</span>
-
-    </div>
+    </a>
 
     <nav>
 
@@ -17,7 +19,7 @@ const cabecalho =
 
         <li><a href="#">Ajude Nosso Site</a></li>
         <li><a href="#">OSC's Próximas</a></li>
-        <li><a href="#">Sobre</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
         <li><a href="#">Ajuda</a></li>
         <li><a href="Porto Ajuda.html">Home</a></li>
 
@@ -33,7 +35,7 @@ const cabecalho =
 header.innerHTML = cabecalho;
 
 const footer = document.querySelector("#footer");
-const rodape = 
+const rodape =
   `
     <div class="footer-logo">
       <div class="logo-footer">
