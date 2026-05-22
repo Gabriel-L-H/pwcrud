@@ -204,7 +204,7 @@ footer {
 }
 
 .logo-name {
-  position: relative;
+  position: absolute;
   bottom: 0;
   position: sticky;
   padding-left: 10px;
