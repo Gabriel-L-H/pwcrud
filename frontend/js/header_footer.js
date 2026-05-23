@@ -1,15 +1,16 @@
 const header = document.querySelector(".navbar");
 const cabecalho =
- `        
+ `        <a href="Porto-Ajuda.html">
     <div class="logo">
-
+    
       <div class="logo-circle">
         <img class="logo-circle-img" src="../imgs/logo-night.png">
       </div>
 
-      <span>Porto Ajuda</span>
+      <span >Porto Ajuda</span>
 
     </div>
+    </a>
 
     <nav>
 

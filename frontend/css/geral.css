@@ -112,7 +112,7 @@
   justify-content: center;
 
   background:
-    rgba(255, 255, 255, .05);
+    #3C266D;
 
   cursor: pointer;
 
@@ -133,7 +133,15 @@
     0 0 30px rgba(242, 170, 26, .45);
 
 }
-
+.fa-regular{
+  color: rgb(181, 128, 255);
+}
+.fa-regular:hover{
+  color: rgb(70, 0, 167);
+}
+a{
+  text-decoration: none;
+}
 /* ============ */
 /* footer */
 /* ============ */
